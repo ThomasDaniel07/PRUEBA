@@ -4,7 +4,7 @@ _Esto es una prueba de caracter tecnico_
 
 ## TENER EN CUENTA QUE
 
-_El diseño es solo una interfase primitiva que cumple con ser funcional y estetica_
+_El diseño es solo una interfase primitiva que cumple con ser funcional y estetica._
 _De presentar carga demorada, es debido a la importacion de librerias como bootstrap y sweetAlert_
 
 ## COMENZANDO 🚀
