@@ -7,6 +7,7 @@ if (isset($_GET['estado'])) {
     $status = $_GET['estado'];
 }
 
+
 ?>
 
 
@@ -63,7 +64,7 @@ if (isset($_GET['estado'])) {
 
             <select name="tipo_de_vehiculo" id="tipo_de_vehiculo" require class="form-select">
 
-                <option disabled selected class="font-semibold">Seleccione el tipo de vehiculo</option>
+                <option disabled selected class="font-semibold" value="">Seleccione el tipo de vehiculo</option>
 
                 <option value="vehiculo_oficial" class="font-semibold">Vehiculo Oficial</option>
 
@@ -81,7 +82,12 @@ if (isset($_GET['estado'])) {
 
             <input type="hidden" id="mensaje" value="<?php echo $status ?>">
 
-
+            <?php
+                if (isset($_GET['error'])) {
+                    $error = $_GET['error'];
+                    echo "<div class='alert alert-danger errorN1 mt-4' role='alert'>$error</div>";
+                }
+            ?>
         </form>
 
     </div>
